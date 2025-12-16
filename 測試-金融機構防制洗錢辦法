@@ -1,7 +1,7 @@
 <html lang="zh-Hant-TW"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- 響應式網頁設定：若後端設定不開啟響應式網頁效果，則不顯示以下這一行 -->
     <meta id="ctl00_RWDSetup" name="viewport" content="width=590"><title>
-	金融監督管理委員會主管法規共用系統-法規內容-金融機構防制洗錢辦法
+	測試-金融機構防制洗錢辦法
 </title>
     <!--[if lt IE 9]>
     <script src="/js/html5shiv.min.js"></script>
@@ -714,5 +714,6 @@
         location.href = "SearchAllResultList.aspx?KW=" + encodeURIComponent(keyword);
     }
 </script>
+
 
 </body></html>
