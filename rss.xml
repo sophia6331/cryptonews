@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+  xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+
+  <channel>
+    <title>加密貨幣市場週報</title>
+    <link>https://sophia6331.github.io/cryptonews/</link>
+    <language>zh-TW</language>
+    <description>每週由 AI 自動整理的加密貨幣市場重點新聞與語音摘要</description>
+
+    <itunes:author>Sophia AI</itunes:author>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:category text="Business">
+      <itunes:category text="Investing"/>
+    </itunes:category>
+
+    <!-- 之後每一集都會自動 append 在這裡 -->
+  </channel>
+</rss>
