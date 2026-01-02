@@ -1,0 +1,45 @@
+.feb_table {
+	border-collapse: separate; border-spacing: 2px;
+}
+.feb_table th {
+	padding: 4px; background-color: rgb(247, 247, 247);
+}
+.feb_table tr.odd {
+	background-color: rgb(255, 251, 235);
+}
+.feb_table tr.even {
+	background-color: rgb(243, 253, 231);
+}
+.feb_table td {
+	padding: 4px;
+}
+.feb_link_btn a {
+	background-position: center; height: 30px; text-align: center; line-height: 30px; padding-top: 4px; padding-bottom: 4px; display: block; background-image: url("../img/feb_button.gif"); background-repeat: no-repeat;
+}
+.feb_link_btn2 a {
+	background-position: center; height: 40px; text-align: center; line-height: 40px; padding-top: 4px; padding-bottom: 4px; display: block; background-image: url("../img/feb_button2.png"); background-repeat: no-repeat;
+}
+.feb_link_icon a {
+	background-position: right; padding-top: 4px; padding-right: 40px; padding-bottom: 4px; background-image: url("../img/feb_link.png"); background-repeat: no-repeat;
+}
+.feb_link_icon a[href$='flag=doc'] {
+	background-position: right; padding-top: 4px; padding-right: 60px; padding-bottom: 4px; background-image: url("../img/feb_download.png"); background-repeat: no-repeat;
+}
+.feb_link a:link {
+	color: rgb(84, 89, 89); text-decoration: none;
+}
+.feb_link a:hover {
+	left: 1px; top: 1px; color: rgb(51, 102, 255); text-decoration: underline; position: relative;
+}
+.feb_link a:visited {
+	color: rgb(51, 102, 255);
+}
+.feb_active {
+	border-width: 1px 1px medium; border-style: solid solid none; border-color: rgb(125, 125, 125) rgb(125, 125, 125) currentColor; border-image: none; color: rgb(51, 102, 255); cursor: pointer; background-color: rgb(255, 251, 235);
+}
+.feb_inactive {
+	border: 1px solid rgb(125, 125, 125); border-image: none; cursor: pointer;
+}
+.layer {
+	border-width: medium 1px 1px; border-style: none solid solid; border-color: currentColor rgb(125, 125, 125) rgb(125, 125, 125); padding: 2% 6%; border-image: none; height: auto; background-color: rgb(255, 251, 235);
+}

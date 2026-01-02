@@ -1,0 +1,300 @@
+a {
+  transition: all .1s ease;
+}
+.menu {
+  position: relative;
+  display: block;
+  z-index: 2;
+  /* top: -60px; */
+  width: 100%;
+  /* height: 0; */
+  background-color: #8e7333;
+}
+body .menu .container {
+  max-width: 1300px;
+  width:100%;
+  margin:auto;
+  padding: 0 15px;
+}
+.vg-nav > ul > li {
+  /*padding: 16px 10px;*/
+}
+.vg-nav > ul > li > a {
+  font-size: 105%;
+  line-height: 1.2;
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  /*font-weight: bold;*/
+  background-repeat:no-repeat;
+  background-position: center 15px;
+  padding: 20px 15px;
+  text-align: center;
+}
+.vg-nav > ul > li.active a,
+.vg-nav > ul > li a:hover,
+.vg-nav > ul > li a:focus {
+  background-color: #5e4100;
+}
+.vg-nav .dropdown ul {
+  background: rgb(238 238 238);
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.15);
+}
+.vg-nav .dropdown ul li a {
+  text-decoration: none;
+  font-size: 100%;
+  display: block;
+  padding: 15px;
+  color: #232323;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: none;
+}
+.vg-nav .dropdown ul li:first-child a {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.vg-nav .dropdown ul ul {
+  background: rgba(255, 255, 255, 0.95);
+}
+.vg-nav .dropdown-mega .dropdown-mega-container {
+  background: #eee;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4 );
+  padding: 15px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.dropdown-mega-container ul {
+  margin: 0 auto;
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+  position: relative;
+}
+.dropdown-mega-container ul ul {
+  display: inline-block;
+  padding: 0;
+  /* background-color: #efefef; */
+}
+.dropdown-mega-container li {
+  margin: 0;
+  list-style-type: none;
+  width: 25%;
+  background: none;
+  float: left;
+  padding: 6px !important;
+  overflow:hidden;
+  position:relative;
+}
+.dropdown-mega-container li a::before {
+  content:"❯";
+  position: absolute;
+  left:5px;
+}
+.dropdown-mega-container li a:hover::before  {
+  content:"❯";
+  position: absolute;
+}
+.dropdown-mega-container li:nth-child(5) {
+  border-bottom:none;
+}
+.dropdown-mega-container li .more a {
+  color:#8c0000;
+}
+.dropdown-mega-container li a {
+  padding: 5px 10px 5px 20px;
+  font-size: 105%;
+  display: block;
+  background-color: #ffe8b2;
+  color: #000;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  border-radius: 3px;
+  box-shadow:1px 1px 2px #ccc;
+  position:relative;
+}
+.dropdown-mega-container li a:hover {
+  text-decoration:none;
+  color:#FFF;
+  background-color:#8e7333 !important;
+}
+.dropdown-mega-container li li a:hover {
+  color:#000;
+}
+.dropdown-mega-container li li {
+  width: 100%;
+  display: block;
+  border-bottom:1px solid #ddd;
+  padding: 0 !important;
+  height: inherit;
+}
+.dropdown-mega-container li li a {
+  padding: 4px 5px;
+  font-size: 100%;
+  display: block;
+  color: #000;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  background-color:transparent;
+}
+.dropdown-mega-container li li a:hover {
+  background-color:#fff3d0;
+  border-radius:0;
+}
+.dropdown-mega-container li li.more {
+  text-align: right;
+}
+.dropdown-mega-container li li.more a {
+  color: #8c0000 !important;
+  opacity: 1;
+}
+.dropdown-mega-container li li.more a:hover {
+  color: #000 !important;
+}
+.vg-nav-hamburger {
+  margin: 0;
+}
+.vg-nav-sidebar .vg-nav-sidebar__content {
+  width: 100%;
+  padding: 0 20px 20px 20px;
+}
+.vg-nav-collapse ul {
+  width: 100%;
+  padding: 20px 0;
+}
+.vg-nav-sidebar__content > ul > li > a,
+.vg-nav-collapse > ul > li > a {
+  display: block;
+  padding: 10px 0;
+  border-bottom: 1px solid #f2f2f2;
+  text-decoration: none;
+  color: #333333;
+}
+.vg-nav-sidebar__content > ul ul,
+.vg-nav-collapse > ul ul {
+  background: rgba(0, 0, 0, 0.02);
+}
+.vg-nav-sidebar__content > ul ul li > a,
+.vg-nav-collapse > ul ul li > a {
+  display: block;
+  /* padding: 5px 10px; */
+  /* border-bottom: 1px solid #f5f5f5; */
+  text-decoration: none;
+  font-size: 100%;
+}
+.vg-nav-sidebar__content .dropdown-mega-container,
+.vg-nav-collapse .dropdown-mega-container {
+  background: rgba(0, 0, 0, 0.02);
+  border-bottom: 1px solid #f5f5f5;
+  padding: 10px;
+}
+@media only screen and (min-width: 992px) {
+.menu.smaller {
+  position: fixed;
+  width: 100%;
+  /* height: 94px; */
+  top: 0px;
+  z-index: 999;
+  display:block;
+  padding: 0;
+  background-color: #8e7333;
+}
+}
+@media only screen and (max-width: 991px) {
+.dropdown-mega-container ul ul {
+  display: block;
+  padding: 0;
+}
+.dropdown-mega-container li {
+  width: 100%;
+  padding: 0;
+}
+.dropdown-mega-container li a {
+  color: #000;
+}
+.dropdown-mega-container li a:hover {
+  /* color: #000 !important; */
+}
+.dropdown-mega-container li a:hover::before  {
+  /*background-color:#000;*/
+}
+.dropdown-mega-container li li a {
+  color: #000 !important;
+}
+.vg-nav-main-container span.toggle span.default {
+  border-top: .3em solid;
+  border-right: .3em solid transparent;
+  border-bottom: 0;
+  border-left: .3em solid transparent;
+  width: 0;
+  height: 0;
+  transition: all 0.4s ease;
+  /* transform: rotate(0); */
+  display: inline-block;
+  /*margin-left: .355em;*/
+  vertical-align: .255em;
+  position: absolute;
+  right: 10px;
+  margin-top: 9px;
+}
+.vg-nav-sidebar__content > ul > li > a:hover,
+.vg-nav-sidebar__content > ul > li > a:focus {
+  background-color: #8e7333;;
+  border-color: transparent;
+  color:#FFF;
+}
+.vg-nav-sidebar__content > ul > li {
+  border-right:none;
+}
+.vg-nav-sidebar__content > ul > li > a {
+  padding:10px;
+  position: relative;
+}
+body .menu {
+  top: -155px;
+  z-index: 9;
+}
+.vg-nav-main-container {
+  display:block;
+}
+.vg-nav-main-container > li:nth-child(2) {
+  border-left: none;
+}
+.dropdown-mega-container li {
+  height: inherit;
+  overflow:inherit;
+}
+.dropdown-mega-container li li.more {
+  /*display:none;*/
+}
+}
+@media only screen and (max-width: 960px) {
+body .menu {
+  top: -212px;
+}
+}
+@media only screen and (max-width: 1275px) {
+.vg-nav > ul > li a {
+  padding: 20px 10px;
+}
+.vg-nav > ul > li li a {
+  padding: 5px 10px 5px 20px;
+}
+}
+@media only screen and (max-width: 1175px) {
+.vg-nav > ul > li > a {
+  padding: 20px 8px;
+}
+}
+@media only screen and (max-width: 1132px) {
+.vg-nav > ul > li > a {
+  padding: 20px 4px;
+  font-size:100%;
+}
+}
+@media only screen and (max-width: 1001px) {
+.vg-nav > ul > li > a {
+  font-size:98%;
+}
+}

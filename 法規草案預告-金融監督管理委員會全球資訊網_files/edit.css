@@ -1,0 +1,181 @@
+@charset "utf-8";
+/* CSS Document */
+/*委員簡介*/
+.ed_left,
+.ed_right{
+    position: relative;
+}
+.ed_left {
+    text-align: center;
+}
+.ed_left .ed_pic01 {
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.42);
+    border: 10px #FFF solid;
+    /* display: inline-block; */
+    border-radius: 5px;
+    max-width: 554px;
+    margin: auto;
+}
+.ed_left .ed_pic01 img {width: 100%;}
+.ed_right .ed_t01 {
+    font-size:120%;
+    font-weight: bold;
+    padding: 5px 0;
+    border-bottom: 1px #764132 solid;
+    margin: 10px 0;
+}
+.ed_right .ed_t02 {
+    font-size:110%;
+    font-weight: bold;
+    color:#840000;
+}
+.ed_right .ed_u01 {
+    position:relative;
+    padding-left:30px;
+    margin-bottom:20px;
+}
+.ed_right .ed_u01 li {
+    list-style: square;
+}
+/*圖片排版01*/
+.album01 {
+    position:relative;
+}
+.album01 img {
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+}
+.album01 p {
+  padding:5px;
+  margin:0;
+}
+.album01 a {
+  color:#000;
+}
+.album01 li {
+  padding:15px;
+}
+.album01 .box {
+  display: block;
+  padding: 12px !important;
+  background-color: #fff;
+  -moz-box-shadow: 3px 3px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 3px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
+  position:relative;
+  text-align:center;
+}
+.album01 .pic {
+  height: 200px;
+  width: 100%;
+  background-color: #f3f3f3;
+  vertical-align: middle;
+  position:relative;
+  overflow: hidden;
+}
+.album01 .pic::before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 0;
+    vertical-align: middle;
+}
+@media (max-width:575px) {
+.album01 .pic {
+  height: inherit;
+}
+.album02 .box {
+    width: 50% !important;
+}
+}
+.album02 {
+    position:relative;
+    display:flex;
+    flex-wrap:wrap;
+}
+.album02 .box {
+    width:25%;
+    text-align:center;
+    padding: 15px;
+}
+.album02 .box .icon {
+    transition: all 200ms ease-out;
+}
+.album02 .box:hover .icon {
+  -moz-transform: scale(1.08);
+  -webkit-transform: scale(1.08);
+  -o-transform: scale(1.08);
+  -ms-transform: scale(1.08);
+  transform: scale(1.08);
+}
+.album02 p {
+  padding:10px 0;
+  letter-spacing: 0;
+}
+.album02 a {
+  color:#764132;
+  font-weight:bold;
+}
+@media (max-width:800px) {
+.album02 .box {
+    width:33.333%;
+}
+}
+@media (max-width:480px) {
+.album02 .box {
+    width:100% !important;
+}
+}
+/*標題列表*/
+.list01 {
+  padding:0;
+  position:relative;
+}
+.list01 ul {
+  padding:0 0 0 35px;
+}
+.list01 li {
+  text-indent: -35px;
+}
+.list01 ul ul {
+  padding:0 0 0 25px;
+}
+.list01 li li {
+  text-indent: -25px;
+}
+/*數字*/
+.list02 {
+  padding: 0 0 0 40px;
+}
+.list02 li {
+  list-style:decimal;
+}
+/*圓點*/
+.list03 {
+  padding: 0 0 0 40px;
+}
+.list03 li {
+  list-style: disc;
+}
+.list03 li a {
+  color:#000;
+}
+
+/*按鈕*/
+.bt01 {
+  position:relative;
+  margin:20px;
+}
+.bt01 a {
+  display:inline-block;
+  padding:10px 20px;
+  margin:0 5px;
+  background-color:#8e7333;
+  color:#FFF;
+  border-radius:5px;
+}
+.bt01 a:hover {
+  background-color:#FF9800;
+  text-decoration: none;
+}

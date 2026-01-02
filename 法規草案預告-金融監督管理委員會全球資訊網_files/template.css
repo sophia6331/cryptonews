@@ -1,0 +1,333 @@
+@charset "utf-8";
+.ap .temp {
+  font-size: 130%;
+  font-weight: bold;
+  color: #8e7333;
+}
+.ap .editbox {
+  position: relative;
+  line-height: 2;
+}
+.ap .editbox img {
+  max-width: 100%;
+}
+/*** 內容範本 start ***/
+.main-a_01-1 {
+  width: 30%;
+}
+.main-a_01-2 {
+  margin-bottom: 15px;
+}
+.main-a_02 {
+  background-color: #ede4cf;
+  font-weight: bold;
+  padding:8px 15px;
+  margin-bottom: 10px;
+}
+.main-a_02-1 {
+  background-color: #FFF;
+  font-weight: bold;
+  padding:8px 15px;
+  margin-bottom: 20px;
+  float: left;
+}
+.main-a_02-2 {
+  font-weight: bold;
+  padding:8px 15px;
+  margin-bottom: 10px;
+  float: left;
+  width: 100%;
+}
+.main-a_02-3 {
+  font-weight: bold;
+  padding:8px 15px;
+  margin-bottom: 10px;
+}
+.main-a_02-4 {
+  font-weight: bold;
+  padding:8px 15px;
+  margin-bottom: 20px;
+  color: #000;
+}
+.main-a_03 { color: #5c5c5c;
+  display: block;
+  margin-bottom: 10px;
+}
+.main-a_04 {
+  background-image: url(/userfiles/template/images/line.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 14px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 100%;
+}
+.main-a_04-1 {
+  height: 20px;
+}
+.main-a_05 {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 5px;
+  max-width: 300px;
+  width: 30%;
+}
+.main-a_05-1 {
+  float: left;
+  margin-right: 15px;
+  max-width: 200px;
+  width: 50%;
+}
+.main-a_05-2 {
+  float: left;
+  margin-right: 20px;
+  max-width: 300px;
+  width: 30%;
+}
+.main-a_05-3 {
+  float: right;
+  margin-left: 20px;
+  max-width: 300px;
+  width: 30%;
+}
+.main-a_06 {
+  float: left;
+  width: 59%;
+}
+.main-a_06-1 {
+  float: right;
+  width: 39%;
+}
+.main-a_07 {
+  float: left;
+  width: 31%;
+}
+.main-a_07-1 {
+  float: right;
+  width: 32%;
+  margin-right: 0px;
+}
+.main-a_07-2 {
+  float: left;
+  width: 31%;
+  margin-right: 3%;
+  margin-left: 3%;
+}
+.main-a_08 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.main-a_09 {
+  padding:20px 0;
+}
+.main-a_10 {}
+.main-a_10-1 {
+  background-color: #d7d7d7;
+  text-align: center;
+  font-weight: bold;
+}
+.main-a_10-2 {
+  background-color: #FFF;
+  text-align: center;
+  color: #666;
+}
+.main-a_11 {
+  /* float: left; */
+  width: 95%;
+  margin-bottom: 10px;
+  background-image: url(/userfiles/template/images/icon-b-11.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  font-weight: bold;
+  padding:10px 20px;
+}
+.main-a_11-1 {
+  float: left;
+  margin-right: 15px;
+}
+.main-a_11-2 {
+  float: left;
+  font-weight: bold;
+  padding-top: 30px;
+}
+.main-a_12 {
+  padding-bottom: 30px;
+}
+.main-a_13 {
+  margin-bottom: 20px;
+  max-width: 1024px;
+  width: 100%;
+}
+.main-a_14 {
+  float: left;
+  width: 100%;
+}
+/*-- div下方清空語法 --*/
+.zbox:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+.zbox {
+  display: block;
+}
+html[xmlns] .clearfix {
+  display: block;
+}
+* html .clearfix {
+  height: 1%;
+}
+/*** 內容範本 end ***/
+/*** table start ***/
+.table01 {
+  width: 100%;
+  background-color: #ffffff;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+.table01 td, .table01 th {
+  padding: 5px;
+}
+.table01 td {
+  color: #666666;
+  border: #ddd 1px solid;
+}
+.table01 th {
+  background-color: #ECECFB;
+  border: #ddd 1px solid;
+  text-align: center;
+}
+.table03 td:nth-child(1) {
+    background-color: #ECECFB;
+}
+.table01 caption {
+    text-align: center;
+    background-color: #6f78a4;
+    padding: 10px 5px;
+    color: #FFF;
+    border-bottom: 1px #fff dotted;
+    font-size: 120%;
+    caption-side: initial;
+    font-weight:bold;
+}
+.table04 td {
+    width:50%;
+}
+/*** table end ***/
+@media only screen and (max-width: 778px) {
+  /*** 內容範本 start ***/
+  .table01 caption {
+    display: block;
+ }
+  .main-a_01-2 {
+    margin-bottom: 15px;
+    float: left;
+    width: 100%;
+  }
+  .main-a_05 {
+    width: 50%;
+  }
+  .main-a_05-1 {
+    width: 40%;
+  }
+  .main-a_05-2 {
+    width: 40%;
+  }
+  .main-a_05-3 {
+    width: 40%;
+  }
+  .main-a_06 {
+    width: 100%;
+  }
+  .main-a_06-1 {
+    width: 100%;
+  }
+  .main-a_07 {
+    width: 100%;
+  }
+  .main-a_07-1 {
+    width: 100%;
+  }
+  .main-a_07-2 {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  /*-- div下方清空語法 --*/
+  .zbox:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+  }
+  .zbox {
+    display: block;
+  }
+  html[xmlns] .clearfix {
+    display: block;
+  }
+  * html .clearfix {
+    height: 1%;
+  }
+  /*** 內容範本 end ***/
+  /*** table start ***/
+  .table02 {
+    background-color: transparent !important;
+  }
+  .table02, .table02 thead, .table02 tbody, .table02 th, .table02 td, .table02 tr {
+    display: block;
+  }
+  /* Hide table headers (but not display: none;, for accessibility) */
+  .table02 thead {
+    display:none;
+  }
+  .table02 tr {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+  }
+  .table02 td {
+    border: none !important;
+    border-bottom: 1px solid #eee !important;
+    position: relative;
+    white-space: normal;
+    text-align: left;
+  }
+  .table02 td:before {
+    content: "";
+    position: initial;
+    width: initial;
+  }
+  .table02 th {
+    display: none;
+  }
+  .table02 td:before {
+    content: attr(data-th) " : ";
+    font-weight: bold;
+    margin-right: 5px;
+    display: inline-block;
+    color: #000;
+  }
+  .table03 td:before {
+    content: attr(data-th) "";
+    font-weight: bold;
+    margin-right: 5px;
+    display: inline-block;
+    width:100px;
+  }
+  .table04 td:before {
+    content: attr(data-th) "";
+    font-weight: bold;
+    margin-right: 5px;
+    display: inline-block;
+  }
+  .table04 td {
+    width:100%;
+  }
+  /*** table end ***/
+}
