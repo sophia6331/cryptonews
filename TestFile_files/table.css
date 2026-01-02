@@ -1,0 +1,366 @@
+﻿table a:focus, table a:hover {text-decoration: underline;}
+
+/* 表格 清單 */
+.table-hover>tbody>tr:hover>* {--bs-table-hover-bg:#f5f5f5;}
+TABLE th, TABLE .th {white-space: nowrap;}
+.text-con TABLE {font-family: "細明體";}
+.tab-list tr {background-color: #fff;}
+.tab-list thead {border-bottom:2px solid #ddd;}
+.tab-list tbody {border-top:1px solid #ddd;}
+.tab-nobg {
+	--bs-body-bg: transparent;
+}
+
+	.tab-nobg tr {
+		background-color: inherit;
+	}
+
+.tab-list th {
+	text-align: center;
+	font-family: Microsoft JhengHei;
+}
+.tab-list .date{ display: block; font-size: small;}
+
+/* 最新訊息 */
+.tab-news th:nth-child(3) {text-align: left;}
+.tab-news td:nth-child(1),
+.tab-news td:nth-child(2),
+.tab-news td:nth-child(4) {white-space: nowrap; text-align: center;}
+.tab-news td:nth-child(5) {white-space: nowrap; text-align: center;}
+
+/* 查詢結果 */
+.tab-result th:nth-child(3) {text-align: left;}
+.tab-result td:nth-child(1),
+.tab-result td:nth-child(2) {white-space: nowrap; text-align: center;}
+
+/* 法規體系 */
+.tab-category th:nth-child(3) {text-align: left;}
+.tab-category td:nth-child(1),
+.tab-category td:nth-child(2),
+.tab-category td:nth-child(4) {white-space: nowrap; text-align: center;}
+
+/* 法規草案 */
+.tab-forum th:nth-child(3) {text-align: left;}
+.tab-forum td:nth-child(1),
+.tab-forum td:nth-child(2) {white-space: nowrap; text-align: center;}
+
+/* 資料開放 */
+.tab-opendata th,
+.tab-opendata td {white-space: nowrap; text-align: center;}
+
+/* 法規內容 */
+.tab-law th ,
+.tab-law td {line-height: 1.7em;}
+.tab-law th {
+	text-align: right;
+	font-family: "細明體";
+	font-weight: normal;
+}
+.tab-law > thead > tr > th,
+.tab-law > tbody > tr > th,
+.tab-law > tfoot > tr > th,
+.tab-law > thead > tr > td,
+.tab-law > tbody > tr > td,
+.tab-law > tfoot > tr > td {
+  border-top: none;
+  border-bottom: 1px dotted #aaa;
+}
+.tab-law tbody {border-top:none;}
+.tab-law tr {border:0;}
+.tab-law .date {
+	display: inline-block;
+	font-size: 0.8125em;
+	margin-left: 8px;
+}
+.tab-law .text-eng {
+	margin-left: 0.5em;
+	font-size: 0.9125em;
+	font-weight: normal;
+}
+.tab-law .law-char th,
+.tab-law .law-no th{text-align:left;font-weight:800;}
+.tab-law .FileList{margin-top:0.5em;}
+
+/* 全文檢索欄位說明 */
+.tab-help > thead > tr > th,
+.tab-help > tbody > tr > th,
+.tab-help > tfoot > tr > th,
+.tab-help > thead > tr > td,
+.tab-help > tbody > tr > td,
+.tab-help > tfoot > tr > td {
+  border-color: #ccc;
+}
+.tab-help tr:nth-child(1) {--bs-table-bg:#f4f4f4;}
+.tab-help ul {list-style-position: outside;}
+.tab-help ul li {
+	background: url(../images/icon_arrow01.png) no-repeat 0 0.25em;
+	padding-left: 1em;
+	padding-bottom: .3em;
+}
+.tab-help span {color: #008900;}
+@media (max-width: 767px) {
+.tab-list,
+.tab-list thead,
+.tab-list tbody,
+.tab-list th,
+.tab-list td,
+.tab-list tr {
+	display: block;
+	text-align: left!important;
+	width:100%;
+}
+.tab-list thead {display: none;}
+.tab-list tbody {border-top:none;}
+.tab-list tr {
+	margin-bottom: 10px;
+	border: 2px solid #ddd;
+}
+.tab-list td:last-child {
+	border-bottom: none;
+}
+.tab-list tr.law-no {
+	margin-bottom:-1px;
+    border-bottom-color:transparent;
+}
+.tab-list .date{ font-size: inherit;}
+
+/* 最新訊息 */
+.tab-news td:nth-child(2) {border-top: none;}
+.tab-news td:nth-child(3) {border-bottom: none;}
+.tab-news td:first-child,
+.tab-news td:last-child {display: none;}
+/* 查詢結果 */
+.tab-result td:nth-child(2) {border-top: none;}
+.tab-result td:first-child {display: none;}
+/* 法規體系 */
+.tab-category td:nth-child(2) {border-top: none;}
+.tab-category td:nth-child(3) {border-bottom: none;}
+.tab-category td:first-child,
+.tab-category td:last-child {display: none;}
+/* 法規內容 */
+.tab-law > thead > tr > th,
+.tab-law > tbody > tr > th,
+.tab-law > tfoot > tr > th,
+.tab-law > thead > tr > td,
+.tab-law > tbody > tr > td,
+.tab-law > tfoot > tr > td {
+  border-bottom: none;
+}
+.tab-law th {
+	background-color: #f5f5f5;
+	width:100%;
+}
+/* 法規草案 */
+.tab-forum td:nth-child(2) {border-top: none;}
+.tab-forum td:first-child {display: none;}
+/* 全文檢索欄位說明 */
+/*.tab-help {border: none;}*/
+.tab-help tr:nth-child(1) {display: none;}
+.tab-help tr > td:nth-child(1) {display: none;}
+.tab-help tr > td:nth-child(2) {--bs-table-bg:#f4f4f4;}
+.tab-help ul li {background-size: 15px;}
+.tab-help-no tr > td:nth-child(1) {display: inherit;}
+}
+@media (max-width: 590px) {
+.tab-list .date{ font-size: x-large;}
+}
+
+/* 表格 內容 */
+.tab-edit > thead > tr > th,
+.tab-edit > tbody > tr > th,
+.tab-edit > tfoot > tr > th,
+.tab-edit > thead > tr > td,
+.tab-edit > tbody > tr > td,
+.tab-edit > tfoot > tr > td {
+	border-color: #ccc;
+	border-width:1px;
+}
+.tab-edit {
+	background-color: #fff;
+	word-break: normal;
+	word-wrap: break-word;
+}
+.tab-edit th {
+	text-align: right;
+	background-color: #f5f5f5;
+	font-weight: normal;
+    width:14%;
+}
+.tab-edit .text-middle {
+	vertical-align: middle;
+	line-height: 2.125em;
+}
+/* 表格 解釋函令 */
+.tab-qry-legallist > tbody > tr > th {
+	width: 97px;
+}
+.tab-qry-legallist > tbody > tr > td {
+	width: 1359px;
+}
+@media (max-width: 767px) {
+.tab-qry-legallist > tbody > tr > th {
+	width: initial;
+}
+.tab-qry-legallist > tbody > tr > td {
+	width: initial;
+}
+
+.tab-edit {
+	background-color: inherit;
+	border: none;
+}
+.tab-edit,
+.tab-edit thead,
+.tab-edit tbody,
+.tab-edit th,
+.tab-edit td,
+.tab-edit tr {
+	display: block;
+	text-align: left!important;
+}
+.tab-edit th {width: 100% !important; border-bottom: none !important;}
+.tab-edit tr {
+	margin-bottom: 10px;
+	border: 1px solid #ddd;
+}
+.tab-edit td {background-color: #fff; border-top: none !important;}
+.tab-edit .text-middle {
+	vertical-align: inherit;
+	line-height: inherit;
+}
+}
+
+/* 表格 查詢 */
+.tab-qry {background-color: #fff;}
+.tab-qry > thead > tr > th,
+.tab-qry > tbody > tr > th,
+.tab-qry > tfoot > tr > th,
+.tab-qry > thead > tr > td,
+.tab-qry > tbody > tr > td,
+.tab-qry > tfoot > tr > td,
+.tab-qry td.th {
+	border-color: #ccc;
+	padding: 10px 15px;
+	line-height:1.6em;
+	vertical-align: middle;
+}
+.tab-qry tr {vertical-align: text-bottom !important;border-color: #ccc;}
+.tab-qry th,
+.tab-qry td.th {
+	text-align: right;
+	background-color: #f5f5f5;
+	font-weight:bold;
+	border-color: #ccc;
+}
+.tab-qry td span {display: inline-block;}
+.tab-qry td Input[type='checkbox'] + label,
+.tab-qry td Input[type='radio'] + label {
+	margin-right: 0.8em;
+	/*vertical-align: middle;*/
+	vertical-align: top;
+}
+.tab-qry .row .law-date {margin-right: -15px;}
+.tab-qry .row .text-date {
+	width: 1%;
+	line-height: 34px;
+}
+.tab-qry .btn-help {margin-left: -20px; white-space:nowrap;}
+.tab-qry .btn-help:active,
+.tab-qry .btn-help:focus,
+.tab-qry .btn-help:hover {
+	background-color: #e6e6e6;
+    border-color: #8c8c8c;
+	text-decoration:none;
+}
+.tab-qry .memoZone {
+	display: inline-block;
+	font-size: 0.9375em;
+	margin-left: 1em;
+}
+.tab-qry legend {font-size: 0; line-height: 0; height: 0; margin: 0;}
+
+/* 表格 英譯法規 */
+.tab-qry-eng th {line-height: 1.2125em;}
+.tab-qry-eng td {vertical-align: middle!important;}
+.tab-qry-eng .text-eng {
+	display: block;
+	font-size: 0.9125em;
+	color: #666;
+	font-weight: normal;
+	line-height: 0.9125em;
+}
+.tab-eng th {background-color: #f9f9f9;}
+.tab-eng td:nth-child(1) {text-align: center;}
+.tab-engresult th:nth-child(3) {text-align: left;}
+.tab-engresult td:nth-child(1),
+.tab-engresult td:nth-child(2) {text-align: center;}
+.tab-engresult .law-chi,
+.tab-engresult .law-eng {
+	background-color: #888;
+	color: #fff;
+	padding: 0px 3px;
+	border-radius: 5px;
+	margin-right: 0.5em;
+	font-size: 0.9125em;
+	font-family: Microsoft JhengHei;
+}
+@media (max-width: 767px) {
+/* 表格 內容 */
+.tab-qry {
+	border: none!important;
+	background-color: transparent;
+}	
+.tab-qry tr {border: none !important;}
+.tab-qry th,
+.tab-qry td.th {
+	height:2.2em;
+	text-align: left;
+	border: none!important;
+	background-color: transparent;
+}
+.tab-qry th,
+.tab-qry td {
+	display: block;
+	white-space: normal;
+	overflow:hidden;
+}
+.tab-qry td {
+	border: #ddd 2px solid!important;
+	border-radius: 10px;
+	margin-bottom: 20px!important;
+}
+.tab-qry td.th {margin-bottom: 0px!important;}
+.tab-qry .row .law-date {margin-right: 0px;}
+.tab-qry .memoZone {display: none;}
+/* 表格 英譯法規 */
+.tab-qry-eng .text-eng {
+	display: inline-block;
+	margin-left: 0.5em;
+}
+.tab-eng {border: none;}
+.tab-engresult td:nth-child(2) {border-top: none;}
+.tab-engresult td:nth-child(1) {display:none;}
+}
+
+/* 草規法案 發表建議 */
+.tab-post .tab-th {
+	letter-spacing: 1pt;
+	text-align: right;
+}
+.tab-post .code a{margin-left: -20px;}
+.tab-post .code button {margin-left: 20px;}
+.tab-post .code input[type=submit] {margin-left: 20px;font-size: 0.875em;font-family: '細明體';}
+.tab-post .memoZone {
+	display: inline-block;
+	font-size: 0.9375em;
+}
+@media (max-width: 992px) {
+.tab-post .tab-th {text-align: left;}
+.tab-post .code a{margin-left: 0px;}
+.tab-post .memoZone {
+	display: inline-block;
+	font-size: 0.9375em;
+	padding: 0;
+	margin:0 0 1em 0;
+}
+}

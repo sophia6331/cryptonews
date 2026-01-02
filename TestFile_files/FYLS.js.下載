@@ -1,0 +1,190 @@
+﻿/******************************************************
+*	hasSpecialCode(s) 檢查字串是否有特殊字元
+*	參數：String s 要檢查的字串
+*	回傳值：第一個特殊字元，若回傳空字串代表無特殊字元
+*	功能：字串只能使用中文、半形英數及+-|&!等符號
+*	
+******************************************************/
+function hasSpecialCode(s) {
+    var c;
+    for (i = 0; i < s.length; i++) {
+        c = s.charCodeAt(i);
+        if (!(
+          ((c >= 48) && (c <= 57)) ||
+          ((c >= 65) && (c <= 90)) ||
+          ((c >= 97) && (c <= 122)) ||
+          (c == 32) || (c == 33) ||
+          (c == 38) || (c == 40) ||
+          (c == 41) || (c == 43) ||
+          (c == 45) || (c == 124) || (c > 255)
+          )) {
+            return s.charAt(i);
+        }
+    }
+    return "";
+}
+var operator = "+&-";
+
+//判斷是否為運算元
+function isOperator(s) {
+    if (operator.indexOf(s) != -1) {
+        return true;
+    }
+    return false;
+}
+/* 全文檢索字詞格式綜合判斷 */
+function validKeys(keys) {
+    if ((operandInBeginAndEnd(keys)) ||
+	    (twoOperandTogether(keys)) ||
+	    (invalidBrackets(keys)) ||
+      (hasInvalidChar(keys))) {
+        return false;
+    } else {
+        return true;
+    }
+}
+//運算元在字串前或後
+function operandInBeginAndEnd(keys) {
+    var s, e;
+    s = keys.substr(0, 1);
+    e = keys.substr(keys.length - 1, 1);
+    if ((operator.indexOf(s) != -1) ||
+	    (operator.indexOf(e) != -1)) {
+        return true;
+    }
+    return false;
+}
+//兩個運算元併在一起
+function twoOperandTogether(keys) {
+    var i, flag, bResult;
+    flag = 0;
+    bResult = false;
+    for (i = 0; i < keys.length; i++) {
+        if (isOperator(keys.charAt(i))) {
+            if (flag == 0) {
+                flag = 1;
+            } else {
+                bResult = true;
+            }
+        } else {
+            flag = 0;
+        }
+    }
+    return bResult;
+}
+//括號判斷
+function invalidBrackets(keys) {
+    var i, bResult;
+    var rbrk, lbrk;
+
+    rbrk = 0;
+    lbrk = 0;
+
+    bResult = 0;
+    for (i = 0; i < keys.length; i++) {
+        if (keys.charAt(i) == "(") {                      //左括號                           
+            if (i != 0) {                                 //在中間的左括號                   
+                if ((keys.charAt(i - 1) != "(") &&
+				   (!isOperator(keys.charAt(i - 1)))) {       //左邊不是左括號或運算符就回傳錯誤 
+                    bResult = 1;
+                    break;
+                }
+            }
+
+            if (i == keys.length - 1) {                     //左括號在字串結尾                 
+                bResult = 2;
+                break;
+            }
+
+            if (isOperator(keys.charAt(i + 1))) {           //左括號的右邊直接接運算符          
+                bResult = 3;
+                break;
+            }
+            lbrk++
+        }
+
+        if (keys.charAt(i) == ")") {                      //右括號                           
+            if (i != keys.length) {                       //在中間的右括號                   
+                if ((keys.charAt(i + 1) != ")") &&
+				   (!isOperator(keys.charAt(i + 1)))) {       //右邊不是右括號或運算符就回傳錯誤 
+                    bResult = 4;
+                    break;
+                }
+            }
+
+            if (i == 0) {                                 //右括號在字串起頭                 
+                bResult = 5;
+                break;
+            }
+
+            if (isOperator(keys.charAt(i - 1))) {           //右括號的左邊直接接運算符          
+                bResult = 6;
+                break;
+            }
+            rbrk++;
+        }
+    }
+    if ((bResult == 0) && (lbrk != rbrk)) {
+        bResult = 7;
+    }
+
+    return (bResult != 0);
+}
+//除了中文、英文數字及()+-&外，是否有不可輸入的字元
+function hasInvalidChar(keys) {
+    var ptrn = "[^\u4e00-\u9fff\uf900-\ufffd\u300c-\u300d0-9a-zA-Z\.\(\)&\+\-\\s（）]";
+    var regex = new RegExp(ptrn);
+    return regex.test(keys);
+}
+/******************************************************
+*	transToWestDate 轉換成八位數西元日期
+*	參數：
+*			y: 民國年
+*			m: 月
+*			d: 日
+*			se:  ["s"|"e"] 
+*				"s":起始日期，若空則填入最小日期
+*				例: 19110000
+*				"e":結束日期，若空則填入最大日期
+*				例: 99991231
+*	回傳值：String 轉換後的日期
+*	
+******************************************************/
+function transToWestDate(y, m, d, se) {
+    var ys, ms, ds, dt;
+    if (y != "") {
+        ys = (Number(y) + 1911).toString(10);
+    } else {
+        if (se == 0) {
+            ys = "0000";
+        } else {
+            ys = "9999";
+        }
+    }
+    if (m != "") {
+        ms = new String(m);
+        if (ms.length == 1) {
+            ms = "0" + ms;
+        }
+    } else {
+        if (se == 0) {
+            ms = "00";
+        } else {
+            ms = "12";
+        }
+    }
+    if (d != "") {
+        ds = new String(d);
+        if (ds.length == 1) {
+            ds = "0" + ds;
+        }
+    } else {
+        if (se == 0) {
+            ds = "00";
+        } else {
+            ds = "31";
+        }
+    }
+    dt = ys + ms + ds;
+    return dt;
+}
