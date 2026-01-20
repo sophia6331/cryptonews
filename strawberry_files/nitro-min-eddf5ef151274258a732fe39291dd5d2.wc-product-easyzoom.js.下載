@@ -1,0 +1,1 @@
+jQuery(function(e){"use strict";if(e(".easyzoom").length){if(e(window).width()>1024){var o=e(".easyzoom").easyZoom({loadingNotice:"",errorNotice:"",preventClicks:false,linkAttribute:"href"});var t=o.data("easyZoom");e(".variations").on("change","select",function(){t.teardown();t._init()})}else{e(".easyzoom a").on("click",function(e){e.preventDefault()})}}});
