@@ -1,0 +1,1184 @@
+﻿/* bootstrap */
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+}
+footer,
+header,
+main,
+menu,
+nav {
+  display: block;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 0.875em;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.btn-xs{
+  padding: 1px 5px;
+  font-size: 0.75em;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.row:before,
+.row:after {
+  display: table;
+  content: " ";
+}
+.row:after {
+  clear: both;
+}
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  float:left;
+}
+.well {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+}
+.badge {
+  display: inline-block;
+  min-width: 10px;
+  padding: 3px 7px;
+  font-size: 0.75em;
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 10px;
+}
+.navbar-form {
+  padding: 10px 15px;
+  margin-top: 8px;
+  margin-right: -15px;
+  margin-bottom: 8px;
+  margin-left: -15px;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 1px 0 rgba(255, 255, 255, .1);
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 1px 0 rgba(255, 255, 255, .1);
+}
+.form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 0.875em;
+  line-height: 1.42857143;
+  background-image: none;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+       -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+          transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.input-group {
+  position: relative;
+  display: table;
+  border-collapse: separate;
+}
+.input-group[class*="col-"] {
+  float: none;
+  padding-right: 0;
+  padding-left: 0;
+}
+.input-group .form-control {
+  position: relative;
+  z-index: 2;
+  float: left;
+  width: 100%;
+  margin-bottom: 0;
+}
+.input-group-lg > .form-control,
+.input-group-lg > .input-group-addon,
+.input-group-lg > .input-group-btn > .btn {
+  height: 46px;
+  padding: 10px 16px;
+  font-size: 1.125em;
+  line-height: 1.33;
+  border-radius: 6px;
+}
+select.input-group-lg > .form-control,
+select.input-group-lg > .input-group-addon,
+select.input-group-lg > .input-group-btn > .btn {
+  height: 46px;
+  line-height: 46px;
+}
+textarea.input-group-lg > .form-control,
+textarea.input-group-lg > .input-group-addon,
+textarea.input-group-lg > .input-group-btn > .btn,
+select[multiple].input-group-lg > .form-control,
+select[multiple].input-group-lg > .input-group-addon,
+select[multiple].input-group-lg > .input-group-btn > .btn {
+  height: auto;
+}
+.input-group-sm > .form-control,
+.input-group-sm > .input-group-addon,
+.input-group-sm > .input-group-btn > .btn {
+  height: 30px;
+  padding: 5px 10px;
+  font-size: 0.75em;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+select.input-group-sm > .form-control,
+select.input-group-sm > .input-group-addon,
+select.input-group-sm > .input-group-btn > .btn {
+  height: 30px;
+  line-height: 30px;
+}
+textarea.input-group-sm > .form-control,
+textarea.input-group-sm > .input-group-addon,
+textarea.input-group-sm > .input-group-btn > .btn,
+select[multiple].input-group-sm > .form-control,
+select[multiple].input-group-sm > .input-group-addon,
+select[multiple].input-group-sm > .input-group-btn > .btn {
+  height: auto;
+}
+.input-group-addon,
+.input-group-btn,
+.input-group .form-control {
+  display: table-cell;
+}
+.input-group-addon:not(:first-child):not(:last-child),
+.input-group-btn:not(:first-child):not(:last-child),
+.input-group .form-control:not(:first-child):not(:last-child) {
+  border-radius: 0;
+}
+.input-group-addon,
+.input-group-btn {
+  width: 1%;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+.input-group-addon {
+  padding: 6px 12px;
+  font-size: 0.875em;
+  font-weight: normal;
+  line-height: 1;
+  color: #555;
+  text-align: center;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.input-group-addon.input-sm {
+  padding: 5px 10px;
+  font-size: 0.75em;
+  border-radius: 3px;
+}
+.input-group-addon.input-lg {
+  padding: 10px 16px;
+  font-size: 1.125em;
+  border-radius: 6px;
+}
+.input-group-addon input[type="radio"],
+.input-group-addon input[type="checkbox"] {
+  margin-top: 0;
+}
+.input-group .form-control:first-child,
+.input-group-addon:first-child,
+.input-group-btn:first-child > .btn,
+.input-group-btn:first-child > .btn-group > .btn,
+.input-group-btn:first-child > .dropdown-toggle,
+.input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle),
+.input-group-btn:last-child > .btn-group:not(:last-child) > .btn {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.input-group-addon:first-child {
+  border-right: 0;
+}
+.input-group .form-control:last-child,
+.input-group-addon:last-child,
+.input-group-btn:last-child > .btn,
+.input-group-btn:last-child > .btn-group > .btn,
+.input-group-btn:last-child > .dropdown-toggle,
+.input-group-btn:first-child > .btn:not(:first-child),
+.input-group-btn:first-child > .btn-group:not(:first-child) > .btn {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.input-group-addon:last-child {
+  border-left: 0;
+}
+.input-group-btn {
+  position: relative;
+  font-size: 0;
+  white-space: nowrap;
+}
+.input-group-btn > .btn {
+  position: relative;
+}
+.input-group-btn > .btn + .btn {
+  margin-left: -1px;
+}
+.input-group-btn > .btn:hover,
+.input-group-btn > .btn:focus,
+.input-group-btn > .btn:active {
+  z-index: 2;
+}
+.input-group-btn:first-child > .btn,
+.input-group-btn:first-child > .btn-group {
+  margin-right: -1px;
+}
+.input-group-btn:last-child > .btn,
+.input-group-btn:last-child > .btn-group {
+  margin-left: -1px;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+.pager {
+  padding-left: 0;
+  margin: 20px 0;
+  text-align: center;
+  list-style: none;
+}
+.pager li {
+  display: inline;
+}
+.pager li > a,
+.pager li > span {
+  display: inline-block;
+  padding: 5px 14px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+}
+.pager li > a:hover,
+.pager li > a:focus {
+  text-decoration: none;
+  background-color: #eee;
+}
+.pager .next > a,
+.pager .next > span {
+  float: right;
+}
+.pager .previous > a,
+.pager .previous > span {
+  float: left;
+}
+.pager .disabled > a,
+.pager .disabled > a:hover,
+.pager .disabled > a:focus,
+.pager .disabled > span {
+  color: #666;
+  cursor: not-allowed;
+  background-color: #fff;
+}
+
+/* 初始設定 */
+body, div, dl, dt, dd, th, td, ul, ol, li, h1, h2, h3, h4, h5, h6, p, form {
+	margin: 0px;
+	padding: 0px;
+}
+body {background-color: #fff;}
+body, 
+Input[type='text'], 
+Input[type='password'], 
+Input[type='submit'], 
+Input[type='reset'], 
+Input[type='button'] {
+	font-family: Microsoft JhengHei;
+	font-size: medium;
+}
+Input[type='text'], 
+Input[type='password'], 
+Input[type='submit'], 
+Input[type='reset'], 
+Input[type='button'] {
+	height:auto;
+}
+Input[type='text'], 
+Input[type='password'] {
+	padding:0;
+}
+
+Input[type='checkbox'], 
+Input[type='radio'] {
+	margin-right: .2em;
+}
+label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: normal;
+  font-weight: inherit;
+}
+h1, h2, h3, h4, h5, h6, strong, em, p {
+	font-size: 100%;
+	font-style: normal;
+	line-height:1.6;
+}
+li {
+	list-style: none;
+	vertical-align: bottom;
+}
+li img {
+	vertical-align: top;
+}
+img {
+	border: 0px currentColor;
+	border-image: none;
+}
+table {
+	border: 0px currentColor;
+	border-image: none;
+	border-collapse: collapse;
+	border-spacing: 0px;
+}
+a {text-decoration: none;}
+a:visited {color: #939;}
+a img {
+	border: currentColor;
+	border-image: none;
+}
+pre {
+	padding: 0;
+	margin: 0;
+	font-size: 1em;
+	background: none;
+	border: none;
+	font-family: "細明體";
+	overflow: visible;
+    color:#000;
+	line-height:170%;
+}
+
+/* 自訂開始 */
+a[accesskey] {display:none;}
+mark {
+	color: #e00000;
+	background-color: transparent;
+	padding: 0;
+}
+.message {
+	padding: 2em;
+}
+
+.badge {
+	background-color: #ec0000;
+	color: #fff;
+	margin-left: .2em;
+	font-family: Microsoft JhengHei;
+}
+.navbar-form {
+	-webkit-box-shadow: none;
+          box-shadow: none;
+}
+.form-control {
+	font-size: medium;
+	font-family: "細明體";
+	color:#000;
+}
+.input-group .btn,
+.input-group .form-control {
+	height: 34px;
+	padding-bottom: 0;
+	padding-top: 0;
+	font-size: medium;
+}
+.input-group .btn {
+}
+
+/* 標籤 */
+.label-fei,
+.label-eng,
+.label-chi,
+.label-danger {
+  font-family: Microsoft JhengHei;
+  display: inline;
+  padding: 0em .2em .1em;
+  margin-right: 3px;
+  margin-left: 3px;
+  font-size: 0.8125em;
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25em;	
+  color: #fff;
+}
+.label-fei a:link,
+.label-eng a:link,
+.label-chi a:link,
+.label-danger a:link {
+	color: #fff;
+	text-decoration: none;
+}
+.label-fei {background-color: #C00;}
+.label-eng {background-color: #F60;}
+.label-chi {background-color: #C00;}
+
+/* 行動版選單 Toggle navigation */
+.navbar-toggle {display:none;}
+
+/* 主頁寬度 */
+.header-con,
+.menu-con,
+.content-con,
+.footer-con {
+	width: 98%;
+	margin:0 auto;
+}
+.container-fluid {padding:0;}
+/* 表頭 */
+.navbar {
+	min-height: 90px;
+	margin-bottom: 0px;
+	border: none;
+	border-radius: 0px;
+}
+header {
+	display: block;
+	position: relative;
+	background-color: #fff;
+}
+.header-con {
+	margin: 0px auto;
+	height: 90px;
+	position: relative;
+}
+.navbar-default {
+	background-color: transparent;
+	border-color: transparent;
+}
+.nav-system{display:none;}
+
+/* LOGO：各機關logo(可自行更換320*90) 或 最多顯示14個中文字 */
+.header-con .logo {
+	width: 320px;
+    height: 90px;
+	line-height: 90px;
+	text-align: center;
+	font-size: 1.375em;
+	font-weight: 800;
+	color: #000;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.header-con .logo a:link,
+.header-con .logo a:hover,
+.header-con .logo a:active,
+.header-con .logo a:visited {color: #000; text-decoration: none!important;}
+/* 系統名稱 */
+.header-con .sys-name {
+	position: absolute;
+	top: 0px;
+	left: 330px;
+	width:280px;
+	height:90px;
+}
+/* 上方選單 */
+.header-nav {display:none;}
+
+/* 整合查詢 */
+.search-box {display:none;}
+/* 主選單 */
+.menu {font-size: 1.125em;}
+.menu-con {
+	margin: 0px auto;
+	position: relative;
+	padding:0.3em 0em;
+}
+.menu ul {
+	margin: 0 auto;
+	display: table;
+}
+.menu li {
+	float: left;
+}
+.menu li > a {
+	padding: 0px 10px;
+	display: inline-block;
+}
+.menu li > a.active, 
+.menu li > a:hover, 
+.menu li > a:focus {
+	text-decoration: none;
+}
+/* 小螢幕 整合查詢 */
+.menu #mySearch,
+.menu .topmenu {display:none;}
+/* 主要內容 */
+.con-bg {
+	background-image:none;
+}
+.content-con {
+	height: auto;
+	min-height: 650px;
+	padding:0.5em 0em;
+	background-color: #fff;
+	position: relative;
+	border:none;
+}
+/* 目前位置 */
+.breadcrumb {
+  padding-left: 0px;
+  margin-bottom: 0px;
+  list-style: none;
+  background-color: transparent;
+	border-radius: 0px;
+}
+.breadcrumb > li {
+  display: inline-block;
+}
+.breadcrumb > li + li:before {
+  padding: 0 5px;
+  color: #333;
+	content: ">\00a0";
+}
+.breadcrumb > .active {
+  color: #333!important;
+}
+
+/* 按鈕區塊 */
+.btnZone {
+	text-align: center;
+	margin: 0 auto 20px auto;
+	display: table;
+}
+.btnZone li {float:left;}
+
+/* 按鈕 查詢 */
+.btnZone .btn,
+.btnZone .btn:visited,
+.btn-printer .btn,
+.btn-printer .btn:visited,
+.btn-post,
+.btn-post:visited { 
+	color: #000;
+	margin:2px;
+	font-size: medium;
+}
+.btnZone .btn:hover,
+.btnZone .btn:focus, 
+.btn-printer .btn:hover,
+.btn-printer .btn:focus,
+.btn-post:hover,
+.btn-post:focus { 
+	color: #000;
+}
+/* 按鈕 友善列印 */
+.btn-printer{
+	position: absolute;
+	top: 10px;
+	right: 30px;
+}
+/* 按鈕 輔助說明 */
+.btn-help {
+	background-color: #efefef;
+	color: #000;
+	border-color: #ccc;
+	font-size: medium;
+	font-family: Microsoft JhengHei !important;
+}
+.btn-help:hover,
+.btn-help:visited {color: #000;}
+.btn-help span {margin-right:0.2em;}
+/* 按鈕 排序 */
+.dropdown-toggle {
+	font-size: small;
+	height: auto;
+}
+.dropdown-menu {display:none;}
+
+/* 本文內容 */
+.text-con {
+	width: 100%;
+	color: #000000;
+	height: auto;
+	position: relative;
+}
+.text-con .text-title {
+	padding-top: 1em;
+	padding-bottom: .5em;
+	margin-bottom: 1.5em;
+	border-bottom: #aaa 3px solid;
+}
+.text-con .text-title h2 {font-size: 1.375em; font-weight: 800; line-height: 1.375em;}
+.text-con .text-title h2 span {margin-right: 6px;}
+.text-con .text-eng {
+	margin-left: .5em;
+	font-family: "Times New Roman", Times, serif;
+}
+.text-con .law-result {
+	display: block;
+	background-color: #efefef;
+	padding: 10px 10px;
+}
+.text-con .law-result h3 {font-size: 1.125em; font-weight: 800; line-height: 1.125em;}
+.text-con .law-result h3 i {margin-right: 10px; font-weight:bolder;}
+
+/* 頁籤 */
+.nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.nav > li {
+  position: relative;
+  display: block;
+}
+.nav > li > a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+}
+.text-con .nav > li > a {margin: 2px;}
+.myTab > li {
+	text-align: center;
+	display: inline-block;
+	font-family: "細明體";
+}
+.myTab > li > a {border-radius: 5px;}
+
+/* 草案檢索 */
+.search-forum {display:none;}
+.draft-info {margin:.5em 0em .5em 2em;}
+.draft-info li {
+	list-style: decimal;
+	padding: .2em;
+}
+.draft-comment h4 {font-size: 1.125em;}
+.draft-comment .info {
+	font-size: small;
+	color:#666;
+	padding:.2em 0;
+}
+/* 內容 兩欄 法規檢索 */
+.leftCategory, .leftResult {font-family: "細明體";}
+.leftCategory, .leftResult {padding: .5em .3em .5em .5em;}
+.leftResult span {margin-left: .3em;}
+.leftResult li {
+	background: url(../images/icon_arrow01.png) no-repeat 0 0.4em;
+	padding-left: 1em;
+	padding-top: .1em;
+	padding-bottom: .1em;
+}
+.leftResult li a:link {
+	display: block;
+	color: #000;
+}
+.leftResult li a:hover {
+	text-decoration: none;
+	background: #aaa;
+	color: #ffffff;
+	border-radius: 3px;
+}
+.leftResult li.active a:link {
+	font-weight: bold;
+	color: #e30000;
+}
+.leftResult li.active a:hover {color: #bd0000 !important;}
+#tree {padding: .5em 0 .5em .1em;}
+
+/* 法規檢索 條文檢索 法規沿革 草案預告 */
+.well, .well a {font-family:"細明體";}
+.well .btn {
+	background-color: #eee;
+	color: #000;
+	border-color: #aaa;
+}
+.well .btn:hover {
+	background-color: #dedede;
+	border-color: #888;
+}
+.well-post h3 {
+	font-weight: normal;
+	border-bottom: #aaa 3px double;
+	margin-bottom: 1em;
+	padding: 5px 0px 15px 0px;
+	font-size: 1.125em;
+	line-height: 1.125em;
+}
+.leftCategory h3,
+.leftResult h3 {
+	font-family: Microsoft JhengHei;
+	font-weight: 800;
+	border-bottom: #aaa 3px double;
+	margin-bottom: 0.5em;
+	padding: 5px 0px 7px 0;
+	line-height: 1.125em;
+}
+.law-reg h3 {
+	text-align: center;
+	font-weight: bold;
+}
+.law-reg-content {
+    width: 90%;
+	margin: auto;
+	padding: 0 15px;
+	line-height: 1.7em !important;
+}
+.law-search {
+    width: 75%;
+	margin: auto;
+	padding: 0 15px;
+}
+.law-search label {
+	font-weight: bold;
+	padding-left: 15px;
+	position: relative;
+}
+.law-search label span {
+	position: absolute;
+	top: 0.3em;
+	left: -0.5em;
+}
+/* 網站導覽 */
+.sitemap {padding: 0 1.2em;}
+.sitemap p {padding: .5em 0;}
+.sitemap ol {margin-left: 1.4em;}
+.sitemap ol li {list-style-type: decimal;}
+
+/* 頁 碼 */
+.pageZone .pageinfo {
+	line-height: 30px;
+	margin-left: 10px;
+}
+.pageZone .pageline {
+	display: inline-block;
+	margin-top: 10px;
+}
+.pageZone .pageno {display: inline-block;}
+.pageZone .pager li > a,
+.pageZone .pager li > span {
+	padding: 2px 14px;
+}
+.pageZone .pager li > a:link,
+.pageZone .pager li > a:visited {
+  color: #069;
+}
+
+/* 法規體系列表 */
+.law-list {
+	width: 60%;
+	margin: 0px auto 20px auto;
+	font-family: "細明體";
+}
+.law-list li a {
+	display: block;
+	border: #ccc 1px solid;
+	padding: 8px 30px;
+	margin-bottom: 5px;
+	border-radius: 8px;
+	text-decoration: none;
+}
+.law-list li a:hover {
+	background-color: #efefef;
+}
+/* 編章節 */
+.law-char{font-weight:800 !important;text-align:left !important;}
+.law-char-2{padding-left:3em !important;font-weight:800 !important;text-align:left !important;}
+.law-char-3{padding-left:6em !important;font-weight:800 !important;text-align:left !important;}
+.law-char-4{padding-left:9em !important;font-weight:800 !important;text-align:left !important;}
+/* 回上方 */
+#gotop {display: none;}
+/* 頁尾 */
+footer {
+	clear:both;
+	font-size: 0.9375em;
+	padding:0.5em 0em 0.5em 1em;
+}
+footer .footer-con {
+	position: relative;
+}
+footer .footer-con .address li {list-style-type: disc; line-height:1.6em;}
+footer .footer-con .logo-box {
+	bottom:0px;
+	right:0px;
+	position: absolute;
+}
+
+.law-paragraph{margin-bottom:1.5em;}
+
+/* 條文內容、辦法的格式還原 */
+.ClearCss table{display:table; width:100%!important;}
+.ClearCss td{display:block; display:table-cell; vertical-align:inherit;}
+.ClearCss {word-wrap:break-word !important; word-break:break-all !important; white-space:normal !important;}
+/*.ClearCss span{word-wrap:break-word !important; word-break:break-all !important; white-space:normal !important;}*/
+.ClearCss th{display:block; display:table-cell; vertical-align:inherit; font-weight:bolder; text-align:center;}
+.ClearCss fieldset{display:block; margin:auto;}
+.ClearCss div{display:block;}
+.ClearCss img{margin:auto;}
+.ClearCss dfn{font-style:italic;}
+.ClearCss i{font-style:italic;}
+.ClearCss cite{font-style:italic;}
+.ClearCss em{font-style:italic;}
+.ClearCss var{font-style:italic;}
+.ClearCss address{font-style:italic;}
+.ClearCss caption {display:table-caption; text-align:center;}
+.ClearCss blockquote{display:block; margin:auto;}
+.ClearCss ul{display:block; margin:auto; margin-left:40px;}
+.ClearCss ol{display:block; margin:auto; margin-left:40px; list-style-type:decimal;}
+.ClearCss ol ul{margin-top:0; margin-bottom:0;}
+.ClearCss ul ol{margin-top:0; margin-bottom:0;}
+.ClearCss ul ul{margin-top:0; margin-bottom:0;}
+.ClearCss ol ol{margin-top:0; margin-bottom:0;}
+.ClearCss li{display:block;}
+.ClearCss p{display:block; margin:auto; padding:auto;}
+.ClearCss pre{display:block; font-family:monospace;}
+.ClearCss b{font-weight:bolder;}
+.ClearCss strong{font-weight:bolder;}
+.ClearCss h1{display:block; font-weight:bolder;}
+.ClearCss h2{display:block; font-weight:bolder;}
+.ClearCss h3{display:block; font-weight:bolder;}
+.ClearCss h4{display:block; font-weight:bolder;}
+.ClearCss h5{display:block; font-weight:bolder;}
+.ClearCss h6{display:block; font-weight:bolder;}
+.ClearCss form{display:block; margin:auto;}
+.ClearCss input{display:block;}
+.ClearCss textarea{display:block;}
+.ClearCss dl{display:block; margin:auto;}
+.ClearCss dt{display:block;}
+.ClearCss dd{display:block; margin-left:40px;}
+.ClearCss dir{margin:auto; margin-left:40px;}
+.ClearCss menu{margin:auto; margin-left:40px;}
+.ClearCss tt{font-family:monospace;}
+.ClearCss code{font-family:monospace;}
+.ClearCss kbd{font-family:monospace;}
+.ClearCss samp{font-family:monospace;}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+td,
+th {
+  padding: 0;
+}
+table {
+  background-color: transparent;
+}
+caption {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: #666;
+  text-align: left;
+}
+th {
+  text-align: left;
+}
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+  padding: 8px;
+  line-height: 1.42857143;
+  vertical-align: top;
+  border-top: 1px solid #ddd;
+}
+.table > thead > tr > th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #ddd;
+}
+.table > caption + thead > tr:first-child > th,
+.table > colgroup + thead > tr:first-child > th,
+.table > thead:first-child > tr:first-child > th,
+.table > caption + thead > tr:first-child > td,
+.table > colgroup + thead > tr:first-child > td,
+.table > thead:first-child > tr:first-child > td {
+  border-top: 0;
+}
+.table > tbody + tbody {
+  border-top: 2px solid #ddd;
+}
+.table .table {
+  background-color: #fff;
+}
+.table-bordered {
+  border: 1px solid #ddd;
+}
+.table-bordered > thead > tr > th,
+.table-bordered > tbody > tr > th,
+.table-bordered > tfoot > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > tbody > tr > td,
+.table-bordered > tfoot > tr > td {
+  border: 1px solid #ddd;
+}
+.table-bordered > thead > tr > th,
+.table-bordered > thead > tr > td {
+  border-bottom-width: 2px;
+}
+/* 表格 清單 */
+TABLE th {white-space: nowrap;}
+.text-con TABLE {font-family: "細明體";}
+.tab-list tr {background-color: #fff;}
+.tab-nobg tr {background-color: inherit;}
+.tab-list th {
+	text-align: center;
+	font-family: Microsoft JhengHei;
+}
+.tab-list .date{ display: block; font-size: small;}
+
+/* 最新訊息 */
+.tab-news th:nth-child(3) {text-align: left;}
+.tab-news td:nth-child(1),
+.tab-news td:nth-child(2),
+.tab-news td:nth-child(4) {white-space: nowrap; text-align: center;}
+
+/* 查詢結果 */
+.tab-result th:nth-child(3) {text-align: left;}
+.tab-result td:nth-child(1),
+.tab-result td:nth-child(2) {white-space: nowrap; text-align: center;}
+
+/* 法規體系 */
+.tab-category th:nth-child(3) {text-align: left;}
+.tab-category td:nth-child(1),
+.tab-category td:nth-child(2),
+.tab-category td:nth-child(4) {white-space: nowrap; text-align: center;}
+
+/* 法規草案 */
+.tab-forum th:nth-child(3) {text-align: left;}
+.tab-forum td:nth-child(1),
+.tab-forum td:nth-child(2) {white-space: nowrap; text-align: center;}
+
+/* 法規內容 */
+.tab-law th ,
+.tab-law td {line-height: 1.7em;}
+.tab-law th {
+	text-align: right;
+	font-family: "細明體";
+	font-weight: normal;
+}
+.tab-law > thead > tr > th,
+.tab-law > tbody > tr > th,
+.tab-law > tfoot > tr > th,
+.tab-law > thead > tr > td,
+.tab-law > tbody > tr > td,
+.tab-law > tfoot > tr > td {
+  border-top: none;
+}
+.tab-law tr {border-bottom: 1px dotted #aaa;}
+.tab-law .date {
+	display: inline-block;
+	font-size: 0.8125em;
+	margin-left: 8px;
+}
+.tab-law .text-eng {
+	margin-left: 0.5em;
+	font-size: 0.9125em;
+	font-weight: normal;
+}
+.tab-law .law-char th,
+.tab-law .law-no th{text-align:left;font-weight:800;}
+.tab-law .FileList{margin-top:0.5em;}
+
+/* 全文檢索欄位說明 */
+.tab-help > thead > tr > th,
+.tab-help > tbody > tr > th,
+.tab-help > tfoot > tr > th,
+.tab-help > thead > tr > td,
+.tab-help > tbody > tr > td,
+.tab-help > tfoot > tr > td {
+  border-color: #ccc;
+}
+.tab-help tr:nth-child(1) {background-color: #f4f4f4;}
+.tab-help ul {list-style-position: outside;}
+.tab-help ul li {
+	background: url(../images/icon_arrow01.png) no-repeat 0 0.25em;
+	padding-left: 1em;
+	padding-bottom: .3em;
+}
+.tab-help span {color: #008900;}
+/* 表格 內容 */
+.tab-edit > thead > tr > th,
+.tab-edit > tbody > tr > th,
+.tab-edit > tfoot > tr > th,
+.tab-edit > thead > tr > td,
+.tab-edit > tbody > tr > td,
+.tab-edit > tfoot > tr > td {
+	border-color: #ccc;
+}
+.tab-edit {
+	background-color: #fff;
+	word-break: normal;
+	word-wrap: break-word;
+}
+.tab-edit th {
+	text-align: right;
+	background-color: #f5f5f5;
+	font-weight: normal;
+    width:14%;
+}
+.tab-edit .text-middle {
+	vertical-align: middle;
+	line-height: 2.125em;
+}
+/* 表格 解釋函令 */
+.tab-qry-legallist > tbody > tr > th {
+	width: 97px;
+}
+.tab-qry-legallist > tbody > tr > td {
+	width: 1359px;
+}
+/* 表格 查詢 */
+.tab-qry {background-color: #fff;}
+.tab-qry > thead > tr > th,
+.tab-qry > tbody > tr > th,
+.tab-qry > tfoot > tr > th,
+.tab-qry > thead > tr > td,
+.tab-qry > tbody > tr > td,
+.tab-qry > tfoot > tr > td,
+.tab-qry td.th {
+	border-color: #ccc;
+	padding: 8px 15px;
+	line-height:1.6em;
+	vertical-align: middle;
+}
+.tab-qry tr {vertical-align: text-bottom !important;}
+.tab-qry th,
+.tab-qry td.th {
+	text-align: right;
+	background-color: #f5f5f5!important;
+	font-weight:bold;
+}
+.tab-qry td {
+	border: #ccc solid 1px!important;
+	background-color: #fff!important;
+}
+.tab-qry td span {display: inline-block;}
+.tab-qry td Input[type='checkbox'] + label,
+.tab-qry td Input[type='radio'] + label {
+	margin-right: 0.8em;
+	vertical-align: middle;
+}
+.tab-qry .row .law-date {margin-right: -15px;}
+.tab-qry .row .text-date {
+	width: 1%;
+	line-height: 34px;
+}
+.tab-qry .btn-help {margin-left: -20px;}
+.tab-qry .memoZone {
+	display: inline-block;
+	font-size: 0.9375em;
+	margin-left: 1em;
+}
+.tab-qry legend {font-size: 0; line-height: 0; height: 0; margin: 0;}
+
+/* 表格 英譯法規 */
+.tab-qry-eng th {line-height: 1.2125em;}
+.tab-qry-eng td {vertical-align: middle!important;}
+.tab-qry-eng .text-eng {
+	display: block;
+	font-size: 0.9125em;
+	color: #666;
+	font-weight: normal;
+	line-height: 0.9125em;
+}
+.tab-eng th {background-color: #f9f9f9;}
+.tab-eng td:nth-child(1) {text-align: center;}
+.tab-engresult th:nth-child(3) {text-align: left;}
+.tab-engresult td:nth-child(1),
+.tab-engresult td:nth-child(2) {text-align: center;}
+.tab-engresult .law-chi,
+.tab-engresult .law-eng {
+	background-color: #888;
+	color: #fff;
+	padding: 0px 3px;
+	border-radius: 5px;
+	margin-right: 0.5em;
+	font-size: 0.9125em;
+	font-family: Microsoft JhengHei;
+}
+/* 草規法案 發表建議 */
+.tab-post div{display:block;}
+.tab-post .tab-th {
+	letter-spacing: 1pt;
+	text-align: right;
+}
+.tab-post .code a{margin-left: -20px;}
+.tab-post .code button {margin-left: 20px;}
+.tab-post .code input[type=submit] {margin-left: 20px;font-size: 0.875em;font-family: '細明體';}
+.tab-post .memoZone {
+	display: inline-block;
+	font-size: 0.9375em;
+}
+
+/* style_dgpa */
+.TypeLi li{float:left; min-width:10em;line-height: 1.5em;}
+.TypeLi2 li{float:left; min-width:14em;line-height: 1.5em;}
+.TypeLi li,
+.TypeLi2 li {margin-right: 1em;}
+
+
+/* 相關實務見解 */
+.table-extent tbody {border-top:1px solid #ddd;}
+.table-extent th {
+    width: 5em;
+}
+
+.table-extent td > div {
+    clear: both;
+    overflow: hidden;
+    line-height: 1.6em;
+}
+
+    .table-extent td > div > b {
+        float: left;
+        width: 4em;
+    }
+
+    .table-extent td > div > pre {
+        margin-left:4em;
+    }
+

@@ -1,0 +1,232 @@
+/* style02 藍色系 */
+a {color: #0066CC;}
+a:hover{color: #ad1818;}
+
+/* 行動版選單 Toggle navigation */
+.navbar-default .navbar-toggle .icon-bar {background-color: #195f9f;}
+.navbar-default .mySearch {background-color: #195f9f!important;}
+
+body {background-color: #444;}
+@media (max-width: 767px) {
+.nav-system {background:#195f9f;}
+body {background-color: #f1f8ff;}
+header {border-bottom-color: #195f9f;}
+}
+
+.header-nav .navbar-nav > li > a {color: #fff;}
+.header-nav .navbar-nav > li > a:hover, 
+.header-nav .navbar-nav > li > a:focus, 
+.header-nav .navbar-nav > li > a.active {color: #FFCC00;}
+
+/* 整合查詢 */
+.search-box .form-control {border-color: #195f9f;}
+.search-box .form-control:focus {border-color: #195f9f;}
+.search-box .btn-default {
+	color: #fff;
+	background-color: #195f9f;
+	border-color: #195f9f;
+}
+.search-box .btn-default:hover, 
+.search-box .btn-default:focus, 
+.search-box .btn-default.active, 
+.open > .dropdown-toggle.btn-default {
+	color: #fff;
+	background-color: #044c7c;
+	border-color: #195f9f;
+}
+
+/*主選單*/
+.menu {background-color: #3c7ab4;}
+.menu li > a {color: #fff;}
+.menu li > a.active, 
+.menu li > a:hover, 
+.menu li > a:focus {background-color: #044c7c;}
+.menu #mySearch {background-color: #444;}
+@media (max-width: 767px) {
+.menu .topmenu {background-color: #444;}
+.menu .topmenu > a.active, 
+.menu .topmenu > a:hover, 
+.menu .topmenu > a:focus {
+	background-color: transparent;
+	color: #FFCC00;
+}
+.menu li:last-child > a {
+	border-bottom-width: 4px;
+	border-bottom-color: #195f9f;
+}
+}
+
+/* 主要內容 */
+/* 背景圖建議尺寸(2048*1024) */
+.con-bg {
+	background: url(../images/background/background02.jpg) no-repeat 0 0 fixed;
+	background-size: cover;
+}
+.content-con {
+	opacity: 0.99;
+	border-left: 1px solid #3c7ab4;
+	border-right: 1px solid #3c7ab4;
+}
+@media (max-width: 767px) {
+.con-bg {background-image: none!important;}
+.content-con {opacity: 1;}
+}
+
+/* 標題 */
+.text-con .text-title {border-bottom-color: #195f9f;}
+.text-con .text-title h2 {color: #195f9f;}
+.text-con .law-result{background-color: #f1f8ff;}
+.text-con .law-result h3 i{color: #195f9f;}
+
+/* 按鈕 */
+.btnZone .btn,
+.btnZone .btn:visited,
+.btn-printer .btn,
+.btn-printer .btn:visited,
+.btn-post,
+.btn-post:visited { 
+	background-color: #007db3;
+	border-color: #006894;
+}
+.btnZone .btn:hover,
+.btnZone .btn:focus, 
+.btn-printer .btn:hover,
+.btn-printer .btn:focus,
+.btn-post:hover,
+.btn-post:focus { 
+	background-color: #006894;
+	border-color: #006894;
+}
+
+/* 頁籤 */
+.myTab > li > a {
+	color: #333;
+	background-color: #c5e0f9;
+	border:#95c7f6 1px solid;
+}
+.myTab a:hover {
+	color: #fff;
+	background-color: #444!important;
+	border-color: #444!important;
+}
+.myTab > li.active > a, 
+.myTab > li.active > a:hover, 
+.myTab > li.active > a:focus {
+	color: #fff;
+	background-color: #195f9f;
+	border-color: #044c7c;
+}
+@media (min-width: 481px) and (max-width: 768px) {
+.myTab a:hover, 
+.myTab a:focus {
+	color: #fff;
+	background-color: #195f9f!important;
+	border-color: #044c7c!important;
+}
+}
+@media (max-width: 480px) {
+.myTab a:hover, 
+.myTab a:focus {
+	color: #fff;
+	background-color: #195f9f!important;
+	border-color: #044c7c!important;
+}
+}
+
+/* 草案檢索 */
+.draft-info {color: #044c7c;}
+.draft-comment .glyphicon-comment, .draft-comment .bi-chat-fill {color: #ad1818;}
+.draft-comment h4 {color: #ad1818;}
+.draft-comment .info {color: #0066CC;}
+
+/* 內容 兩欄 法規檢索 */
+.leftResult li.active a:hover {color: #F00 !important;}
+.leftResult li a:hover {
+	background-color: #c5e0f9;
+	color: inherit;
+}
+.jstree-proton .jstree-hovered {
+	background-color: #c5e0f9 !important;
+	box-shadow: none !important;
+	color:inherit !important;
+ }
+@media (max-width: 767px) {
+.leftResult li a:link,
+.leftResult li a:visited,
+.leftResult li a:focus {
+	border-color: #95c7f6;
+	color: #444;
+	background-color: #c5e0f9;
+}
+.leftResult li a:hover {
+	color: #fff;
+	background-color: #195f9f;
+}
+.leftResult li.active a:link {color: #444;}
+.leftResult li.active a:hover {color: #fff !important;}
+}
+
+/* 法規檢索 條文檢索 法規沿革 草案預告*/
+.well {
+	background-color: #f1f8ff;
+	border: 1px solid #95c7f6;
+}
+.well-post h3,
+.leftCategory h3,
+.leftResult h3 {border-color: #95c7f6; color: #044c7c;}
+@media (max-width: 767px) {
+.well-post {background-color: #c5e0f9 !important;}
+.well-post h3,
+.leftCategory h3,
+.leftResult h3 {border-color: #195f9f;}
+}
+
+/* 頁 碼*/
+.pageZone .pager li > a:hover,
+.pageZone .pager li > a:focus {
+  border: 1px solid #195f9f;
+  background-color: #f1f8ff;
+}
+@media (max-width: 767px) {
+.pageZone .pager li > a:hover,
+.pageZone .pager li > a:focus {
+  background-color: #ffffff;
+}
+}
+
+/* 法規體系列表 */
+.law-list li a {
+	background: #f1f8ff;
+	border-color :#95c7f6;
+}
+.law-list li a:hover {
+	background-color: #c5e0f9;
+	color: #333;
+}
+@media (max-width: 767px) {
+.law-list li a {
+	color: #333;
+	background-color: #c5e0f9;
+}
+.law-list li a:hover {
+	color: #fff;
+	background-color: #195f9f;
+}
+}
+
+/*頁尾*/
+footer .footer-con {color: #fff;}
+@media (max-width: 767px) {
+footer {background-color: #444;}
+}
+
+/* 表格 */
+.tab-list .date {color: #d64000;}
+.tab-qry .memoZone {color: #0066CC;}
+.tab-eng th {background-color: #f1f8ff;}
+@media (max-width: 767px) {
+.tab-qry td {
+	border: none!important;
+	background-color: #c5e0f9;
+}
+}
